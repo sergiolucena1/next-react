@@ -1,0 +1,73 @@
+Next e TypeScript
+
+no bash (criar estrutura do next)
+>  npx create-next-app (nome do projeto)
+> code (abrir no visual)
+
+deletar algumas pastas
+-readme
+- deletar pasta  styles
+-na pasta pages (deletar = api)
+- na pasta public( deletar itens ) so deixar a pasta
+
+No index.js 
+-deletar as importaçoes
+-remover todos os componentes abaixo do return(
+
+No _app.js
+-remover global css
+
+abrir terminal
+> yarn dev
+depois ir no navegador e abrir o local rost 3000
+
+
+CONFIGURAR TYPESCRIPT NO NEXT--------------
+
+abrir dois terminais 
+> yarn add typescript @types/react @types/node -D
+
+CONVERTER TODOS OS ARQUIVOS (JS) EM (TSX)
+index.tpx e _app.tsx
+
+criar pasta 
+SRC (colocar a pasta pages dentro da src)
+> yarn dev
+
+Na pasta SRC criar a pasta styles
+-criar arquivo global.css
+importar o css no _app.tsx('../styles/global.css')
+
+instalar o Sass (pré processador CSS)
+> yarn add sass
+
+trocar a extensao do arquivo para:
+global.scss
+e trocar na importacao 
+importar o css no _app.tsx('../styles/global.scss')
+
+
+COLOCANDO FONTES NO NEXT
+
+criar arquivo _document.tsx
+importar:
+import Document, {Html, Head, Main, NextScript} from 'next/document';
+
+export default class MyDocument extends Document {
+  render() {
+    return(
+      <Html>
+        <Head>
+          importar fontes aqui 
+        </Head>
+          <body>
+            <Main/>
+            <NextScript/>
+          </body>
+      </Html>
+    )
+  }
+}
+
+COLOCAR a importacao das fontes dentro do <Head>
+OBS:lembrar de fechar as tags das importações </>

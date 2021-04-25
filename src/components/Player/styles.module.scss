@@ -1,0 +1,13 @@
+.playerContainer{
+  padding: 3rem 4rem; // vertical e horizontal
+  width: 26.5rem;
+  height: 100vh;
+
+  background: var(--purple-500);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+}

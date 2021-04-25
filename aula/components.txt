@@ -1,0 +1,6 @@
+Criando pasta components
+- criar pasta Header
+-criar arquivo: index.tsx
+-criar arquivo: styles.module.scss
+
+-criaar pasta player
